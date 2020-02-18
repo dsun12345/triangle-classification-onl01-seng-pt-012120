@@ -17,8 +17,9 @@ class Triangle
         :equilateral
       elsif (@length == @width) || (@width == @height) || (@length == @height)  
         :isosceles
-      elsif (@length != @width) && (@width != @height) 
+      elsif (@length != @width) && (@width != @height) && (@length != @height)
         :scalene 
+      end
     end 
   end 
   
