@@ -9,7 +9,7 @@ class Triangle
   
   def kind
     if (@length < 0) || (@width < 0) || (@height < 0)
-      
+      raise TriangleError 
     if (@length == @width) && (@width == @height) 
       :equilateral
     elsif (@length == @width) || (@width == @height) || (@length == @height)  
