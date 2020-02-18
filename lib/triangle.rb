@@ -8,14 +8,12 @@ class Triangle
   end 
   
   def kind
-
+    if (@length < 0) || (@width < 0) || (@height < 0)
+      
     if (@length == @width) && (@width == @height) 
       :equilateral
     elsif (@length == @width) || (@width == @height) || (@length == @height)  
       :isosceles
-=======
-    if @length == @width == @height 
-      :equilateral
     else
       :scalene 
     end 
@@ -26,6 +24,5 @@ class Triangle
       
     end 
   
-=======
->>>>>>> 38cfa2f7a671d3852e4ae82a1018e40233448240
+
 end
